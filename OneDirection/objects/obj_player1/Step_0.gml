@@ -39,7 +39,7 @@ if (keyboard_check_pressed(action_button) && !action)
 {
 	show_debug_message("Starting action " + current_action);
     action = true;
-	image_index = 1;
+	sprite_index = spr_player_jump;
 	turbine_sound = choose(snd_turbine_0,snd_turbine_1,snd_turbine_2);
 	audio_play_sound(turbine_sound, 10, false);
 	alarm[0] = action_duration;

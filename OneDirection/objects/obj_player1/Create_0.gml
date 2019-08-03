@@ -1,7 +1,5 @@
 /// @description Creating user
 
-image_speed = 0
-
 move_speed = 4;
 global.angle = 0; // move angle in degree
 global.player_id = self.id;
@@ -15,7 +13,7 @@ frozen = false;
 running = false;
 
 action_button = vk_space;
-action_duration = 30;
+action_duration = 35;
 action = false;
 current_action = "jumping";
 
