@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if (shake_time > 0)
+if (!success && shake_time > 0)
 {
 view_xport[0] += random_range(-shake_magnitude, shake_magnitude);
 view_yport[0] += random_range(-shake_magnitude, shake_magnitude);

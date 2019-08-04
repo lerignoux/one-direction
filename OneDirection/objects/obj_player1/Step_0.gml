@@ -48,7 +48,7 @@ if (keyboard_check_pressed(action_button) && !action)
 if (running) {
 	next_pos = angle_pos(move_speed/10);
 	move_towards_point(x+next_pos[0], y+next_pos[1], move_speed)
-	if (random(60) < 0.2) {
+	if (random(60) < 0.3) {
 		robot_sound = choose(snd_robot_0,snd_robot_1);
 		audio_play_sound(robot_sound, 10, false);
 	}
