@@ -16,5 +16,6 @@ action_button = vk_space;
 action_duration = 35;
 action = false;
 current_action = "jumping";
+action_vfx = pointer_null;
 
 music = audio_play_sound(snd_the_grind, 10, false);
