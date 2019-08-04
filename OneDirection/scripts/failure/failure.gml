@@ -1,3 +1,6 @@
+/// failure()
+/// @description player failed, shake cam and plan a reset
+
 obj_player1.frozen = true;
 obj_player1.running = false;
 
