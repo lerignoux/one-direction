@@ -39,7 +39,7 @@ if (keyboard_check_pressed(action_button) && !action)
 {
 	show_debug_message("Starting action " + current_action);
     action = true;
-	//sprite_index = spr_player_jump;
+	jump_offset = jump_height;
 	action_vfx = instance_create_layer(x,y, "Instances", obj_vfx_jump);
 	turbine_sound = choose(snd_turbine_0,snd_turbine_1,snd_turbine_2);
 	audio_play_sound(turbine_sound, 10, false);
@@ -53,4 +53,9 @@ if (running) {
 		robot_sound = choose(snd_robot_0,snd_robot_1);
 		audio_play_sound(robot_sound, 10, false);
 	}
+}
+
+if (jump_offset >= 0) {
+	jump_offset = alarm[0]*jump_height/action_duration;
+	sprite_set_offset(spr_player_idle, sprite_get_xoffset(spr_player_idle), idle_sprite_offset + jump_offset);
 }

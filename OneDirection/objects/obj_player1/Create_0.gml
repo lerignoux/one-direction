@@ -18,4 +18,8 @@ action = false;
 current_action = "jumping";
 action_vfx = pointer_null;
 
+jump_height = 80;
+jump_offset = 0;
+idle_sprite_offset = sprite_get_yoffset(spr_player_idle);
+
 music = audio_play_sound(snd_the_grind, 10, false);
